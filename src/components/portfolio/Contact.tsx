@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Icons } from "./icons";
+import { profile } from "./profile";
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -10,10 +11,12 @@ export function Contact() {
     console.log("Contact form submitted:", formData);
   };
 
+  // TODO: set values in profile.ts
   const contactItems = [
-    { icon: <Icons.Mail />, label: "Email", val: "priyankaba@email.com" }, // TODO: real email
-    { icon: <Icons.Github />, label: "GitHub", val: "github.com/priyankaba" }, // TODO: real handle
-    { icon: <Icons.Linkedin />, label: "LinkedIn", val: "linkedin.com/in/priyankaba" }, // TODO: real handle
+    { icon: <Icons.Mail />, label: "Email", val: profile.email, href: `mailto:${profile.email}` },
+    { icon: <Icons.Github />, label: "GitHub", val: "View profile", href: profile.github },
+    { icon: <Icons.Linkedin />, label: "LinkedIn", val: "Connect", href: profile.linkedin },
+    { icon: <Icons.ExternalLink />, label: "Portfolio", val: "Visit site", href: profile.portfolio },
   ];
 
   return (
@@ -64,13 +67,13 @@ export function Contact() {
               I'm always open to new opportunities, collaborations, and interesting conversations. Feel free to reach out!
             </p>
             {contactItems.map((item) => (
-              <div className="contact-item" key={item.label}>
+              <a className="contact-item" key={item.label} href={item.href} target="_blank" rel="noopener noreferrer">
                 <div className="contact-item-icon">{item.icon}</div>
                 <div>
                   <div className="contact-item-label">{item.label}</div>
                   <div className="contact-item-val">{item.val}</div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
