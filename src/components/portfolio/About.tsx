@@ -15,18 +15,25 @@ export function About({ scrollTo }: AboutProps) {
   return (
     <section id="about">
       <div className="section-wrap">
-        <div className="section-tag fade-up"><span>✦</span> About</div>
+        <div className="section-tag fade-up">
+          <span>✦</span> About
+        </div>
         <h2 className="section-title fade-up">About Me</h2>
         <div className="about-card glass fade-up">
           <div className="about-text">
             <p>
-              I'm pursuing my MSc in Computer Applications &amp; Information Technology. I enjoy coding,
-              building web applications, and solving problems through technology.
+              I'm pursuing my MSc in Computer Applications &amp; Information Technology. I enjoy
+              coding, building web applications, and solving problems through technology.
             </p>
             <p>
-              I believe in continuous learning, clean code, and creating meaningful impact through software.
+              I believe in continuous learning, clean code, and creating meaningful impact through
+              software.
             </p>
-            <button className="btn-primary" style={{ marginTop: 10 }} onClick={() => scrollTo("contact")}>
+            <button
+              className="btn-primary"
+              style={{ marginTop: 10 }}
+              onClick={() => scrollTo("contact")}
+            >
               More About Me <Icons.Arrow />
             </button>
           </div>

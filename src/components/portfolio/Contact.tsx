@@ -16,13 +16,20 @@ export function Contact() {
     { icon: <Icons.Mail />, label: "Email", val: profile.email, href: `mailto:${profile.email}` },
     { icon: <Icons.Github />, label: "GitHub", val: "View profile", href: profile.github },
     { icon: <Icons.Linkedin />, label: "LinkedIn", val: "Connect", href: profile.linkedin },
-    { icon: <Icons.ExternalLink />, label: "Portfolio", val: "Visit site", href: profile.portfolio },
+    {
+      icon: <Icons.ExternalLink />,
+      label: "Portfolio",
+      val: "Visit site",
+      href: profile.portfolio,
+    },
   ];
 
   return (
     <section id="contact">
       <div className="section-wrap">
-        <div className="section-tag fade-up"><span>✦</span> Connect</div>
+        <div className="section-tag fade-up">
+          <span>✦</span> Connect
+        </div>
         <h2 className="section-title fade-up">Get In Touch</h2>
         <div className="contact-grid">
           <div className="glass fade-up" style={{ padding: "32px" }}>
@@ -62,12 +69,21 @@ export function Contact() {
           </div>
 
           <div className="contact-info glass fade-up">
-            <h3 style={{ fontFamily: "var(--font-display)", fontSize: 22, marginBottom: 4 }}>Let's connect!</h3>
+            <h3 style={{ fontFamily: "var(--font-display)", fontSize: 22, marginBottom: 4 }}>
+              Let's connect!
+            </h3>
             <p style={{ color: "var(--c-muted)", fontSize: 14, marginBottom: 16, lineHeight: 1.7 }}>
-              I'm always open to new opportunities, collaborations, and interesting conversations. Feel free to reach out!
+              I'm always open to new opportunities, collaborations, and interesting conversations.
+              Feel free to reach out!
             </p>
             {contactItems.map((item) => (
-              <a className="contact-item" key={item.label} href={item.href} target="_blank" rel="noopener noreferrer">
+              <a
+                className="contact-item"
+                key={item.label}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="contact-item-icon">{item.icon}</div>
                 <div>
                   <div className="contact-item-label">{item.label}</div>

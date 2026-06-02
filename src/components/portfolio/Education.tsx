@@ -4,7 +4,9 @@ export function Education() {
   return (
     <section id="education">
       <div className="section-wrap">
-        <div className="section-tag fade-up"><span>✦</span> Academia</div>
+        <div className="section-tag fade-up">
+          <span>✦</span> Academia
+        </div>
         <h2 className="section-title fade-up">Education</h2>
         <div className="edu-card glass fade-up" style={{ marginTop: 36 }}>
           <div className="edu-icon-wrap">

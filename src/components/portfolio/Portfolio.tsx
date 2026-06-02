@@ -41,8 +41,11 @@ export default function Portfolio() {
   // Intersection observer for fade-up animations
   useEffect(() => {
     const obs = new IntersectionObserver(
-      (entries) => entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add("visible"); }),
-      { threshold: 0.12 }
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.classList.add("visible");
+        }),
+      { threshold: 0.12 },
     );
     document.querySelectorAll(".fade-up").forEach((el) => obs.observe(el));
     return () => obs.disconnect();

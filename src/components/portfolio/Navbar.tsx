@@ -10,11 +10,24 @@ interface NavbarProps {
   scrollTo: (id: string) => void;
 }
 
-export function Navbar({ scrolled, mobileOpen, activeSection, setMobileOpen, scrollTo }: NavbarProps) {
+export function Navbar({
+  scrolled,
+  mobileOpen,
+  activeSection,
+  setMobileOpen,
+  scrollTo,
+}: NavbarProps) {
   return (
     <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="nav-inner">
-        <a className="nav-logo" href="#home" onClick={(e) => { e.preventDefault(); scrollTo("home"); }}>
+        <a
+          className="nav-logo"
+          href="#home"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollTo("home");
+          }}
+        >
           <div className="nav-logo-badge">PJ</div>
           <span className="nav-logo-name">Priyankaba Jadeja</span>
         </a>
@@ -24,7 +37,10 @@ export function Navbar({ scrolled, mobileOpen, activeSection, setMobileOpen, scr
               <a
                 href={`#${l.toLowerCase()}`}
                 className={activeSection === l.toLowerCase() ? "active" : ""}
-                onClick={(e) => { e.preventDefault(); scrollTo(l.toLowerCase()); }}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollTo(l.toLowerCase());
+                }}
               >
                 {l}
               </a>
@@ -32,7 +48,12 @@ export function Navbar({ scrolled, mobileOpen, activeSection, setMobileOpen, scr
           ))}
         </ul>
         {/* TODO: set profile.resume in profile.ts */}
-        <a className="nav-resume-btn" href={profile.resume} target="_blank" rel="noopener noreferrer">
+        <a
+          className="nav-resume-btn"
+          href={profile.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Icons.Download /> Resume
         </a>
         <button className="nav-mobile-toggle" onClick={() => setMobileOpen(!mobileOpen)}>
@@ -41,12 +62,24 @@ export function Navbar({ scrolled, mobileOpen, activeSection, setMobileOpen, scr
       </div>
       <div className={`nav-mobile-menu${mobileOpen ? " open" : ""}`}>
         {navLinks.map((l) => (
-          <a key={l} href={`#${l.toLowerCase()}`} onClick={(e) => { e.preventDefault(); scrollTo(l.toLowerCase()); }}>
+          <a
+            key={l}
+            href={`#${l.toLowerCase()}`}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollTo(l.toLowerCase());
+            }}
+          >
             {l}
           </a>
         ))}
         {/* TODO: set profile.resume in profile.ts */}
-        <a href={profile.resume} target="_blank" rel="noopener noreferrer" style={{ marginTop: 8, color: "var(--c-accent)", fontWeight: 600 }}>
+        <a
+          href={profile.resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ marginTop: 8, color: "var(--c-accent)", fontWeight: 600 }}
+        >
           <Icons.Download /> &nbsp;Download Resume
         </a>
       </div>

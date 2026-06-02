@@ -13,10 +13,21 @@ export function Footer() {
   return (
     <footer>
       <div className="footer-inner">
-        <p className="footer-copy">© {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
+        <p className="footer-copy">
+          © {new Date().getFullYear()} {profile.name}. All rights reserved.
+        </p>
         <div className="footer-social">
           {socials.map((s, i) => (
-            <a key={i} href={s.href} className="social-btn" aria-label={s.label} target="_blank" rel="noopener noreferrer">{s.icon}</a>
+            <a
+              key={i}
+              href={s.href}
+              className="social-btn"
+              aria-label={s.label}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {s.icon}
+            </a>
           ))}
         </div>
       </div>

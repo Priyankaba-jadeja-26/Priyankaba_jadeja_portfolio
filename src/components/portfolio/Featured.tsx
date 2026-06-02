@@ -6,8 +6,12 @@ export function Featured() {
   return (
     <section id="featured">
       <div className="section-wrap">
-        <div className="section-tag fade-up"><span>✦</span> Currently Building</div>
-        <h2 className="section-title fade-up" style={{ marginBottom: 8 }}>Featured Project</h2>
+        <div className="section-tag fade-up">
+          <span>✦</span> Currently Building
+        </div>
+        <h2 className="section-title fade-up" style={{ marginBottom: 8 }}>
+          Featured Project
+        </h2>
         <p className="section-sub fade-up" style={{ marginBottom: 36 }}>
           The project I'm pouring the most energy into right now.
         </p>
@@ -27,16 +31,27 @@ export function Featured() {
               <span className="featured-badge">In Development</span>
             </div>
             <p className="featured-tagline">{p.tagline}</p>
-            <p className="project-desc" style={{ marginBottom: 18 }}>{p.desc}</p>
+            <p className="project-desc" style={{ marginBottom: 18 }}>
+              {p.desc}
+            </p>
 
             <ul className="featured-highlights">
               {p.highlights.map((h) => (
-                <li key={h}><span className="featured-check" aria-hidden="true">✓</span>{h}</li>
+                <li key={h}>
+                  <span className="featured-check" aria-hidden="true">
+                    ✓
+                  </span>
+                  {h}
+                </li>
               ))}
             </ul>
 
             <div className="project-tags" style={{ marginBottom: 20 }}>
-              {p.tags.map((t) => <span className="tag" key={t}>{t}</span>)}
+              {p.tags.map((t) => (
+                <span className="tag" key={t}>
+                  {t}
+                </span>
+              ))}
             </div>
 
             <div className="hero-btns" style={{ margin: 0 }}>

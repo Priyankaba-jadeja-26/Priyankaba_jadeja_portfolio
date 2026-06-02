@@ -2,8 +2,18 @@
 // TODO: Replace the placeholder content below with real portfolio data.
 
 export const skills = [
-  "Python", "Java", "C", "C++", "SQL", "JavaScript",
-  "TypeScript", "HTML", "CSS", "Git", "GitHub", "Supabase",
+  "Python",
+  "Java",
+  "C",
+  "C++",
+  "SQL",
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "Git",
+  "GitHub",
+  "Supabase",
 ];
 
 export interface Project {
@@ -32,8 +42,7 @@ export interface FeaturedProject {
 export const featuredProject: FeaturedProject = {
   title: "Aroha",
   tagline: "A platform for reflection, growth & mindful living.",
-  desc:
-    "Aroha helps people journal their thoughts, track personal progress and build mindful habits. It combines a calm, focused interface with secure cloud sync so reflection feels effortless and private.",
+  desc: "Aroha helps people journal their thoughts, track personal progress and build mindful habits. It combines a calm, focused interface with secure cloud sync so reflection feels effortless and private.",
   tags: ["TypeScript", "React", "Supabase", "Tailwind CSS"],
   live: "#", // TODO: add live demo URL
   github: "#", // TODO: add GitHub repo URL
@@ -45,7 +54,10 @@ export const featuredProject: FeaturedProject = {
   screenshots: [
     // TODO: replace these placeholders with real Aroha screenshots.
     { src: "https://picsum.photos/seed/aroha-1/1200/750", alt: "Aroha dashboard screenshot" },
-    { src: "https://picsum.photos/seed/aroha-2/1200/750", alt: "Aroha journaling screen screenshot" },
+    {
+      src: "https://picsum.photos/seed/aroha-2/1200/750",
+      alt: "Aroha journaling screen screenshot",
+    },
   ],
 };
 
@@ -100,5 +112,11 @@ export const highlights = [
 ];
 
 export const navLinks = [
-  "Home", "About", "Skills", "Projects", "Experience", "Education", "Contact",
+  "Home",
+  "About",
+  "Skills",
+  "Projects",
+  "Experience",
+  "Education",
+  "Contact",
 ];

@@ -4,7 +4,9 @@ export function Skills() {
   return (
     <section id="skills">
       <div className="section-wrap">
-        <div className="section-tag fade-up"><span>✦</span> Expertise</div>
+        <div className="section-tag fade-up">
+          <span>✦</span> Expertise
+        </div>
         <h2 className="section-title fade-up">My Skills</h2>
         <p className="section-sub fade-up">Technologies and tools I work with.</p>
         <div className="skills-grid fade-up">
