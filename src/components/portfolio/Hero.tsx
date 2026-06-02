@@ -41,7 +41,7 @@ export function Hero({ scrollTo }: HeroProps) {
             <Sparkle size={18} style={{ position: "absolute", top: 20, left: 20 }} />
             <Sparkle size={12} style={{ position: "absolute", bottom: 30, right: 24, animationDelay: "1s" }} className="sparkle-float" />
             <Sparkle size={22} style={{ position: "absolute", top: 60, right: 16, opacity: 0.4, animationDelay: "0.5s" }} />
-            <div className="hero-img-wrap sparkle-float">
+            <div className="hero-img-wrap float-soft">
               {/* TODO: set profile.photo in profile.ts */}
               <img
                 src={profile.photo}
