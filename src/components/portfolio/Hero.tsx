@@ -1,4 +1,5 @@
 import { Icons, Sparkle } from "./icons";
+import { profile } from "./profile";
 
 interface HeroProps {
   scrollTo: (id: string) => void;
@@ -25,12 +26,12 @@ export function Hero({ scrollTo }: HeroProps) {
               <button className="btn-primary" onClick={() => scrollTo("projects")}>
                 View Projects <Icons.Arrow />
               </button>
-              {/* TODO: add real GitHub profile URL */}
-              <a className="btn-ghost" href="#" target="_blank" rel="noopener noreferrer">
+              {/* TODO: set profile.github in profile.ts */}
+              <a className="btn-ghost" href={profile.github} target="_blank" rel="noopener noreferrer">
                 <Icons.Github /> GitHub
               </a>
-              {/* TODO: add real LinkedIn profile URL */}
-              <a className="btn-ghost" href="#" target="_blank" rel="noopener noreferrer">
+              {/* TODO: set profile.linkedin in profile.ts */}
+              <a className="btn-ghost" href={profile.linkedin} target="_blank" rel="noopener noreferrer">
                 <Icons.Linkedin /> LinkedIn
               </a>
             </div>
@@ -40,16 +41,32 @@ export function Hero({ scrollTo }: HeroProps) {
             <Sparkle size={18} style={{ position: "absolute", top: 20, left: 20 }} />
             <Sparkle size={12} style={{ position: "absolute", bottom: 30, right: 24, animationDelay: "1s" }} className="sparkle-float" />
             <Sparkle size={22} style={{ position: "absolute", top: 60, right: 16, opacity: 0.4, animationDelay: "0.5s" }} />
-            <div className="hero-img-wrap">
-              {/* TODO: replace with a real profile photo */}
+            <div className="hero-img-wrap float-soft">
+              {/* TODO: set profile.photo in profile.ts */}
               <img
-                src="https://images.unsplash.com/photo-1494790108755-2616b332b70b?w=600&q=80&auto=format&fit=crop"
-                alt="Priyankaba Jadeja"
+                src={profile.photo}
+                alt={`Portrait of ${profile.name}`}
+                width={130}
+                height={130}
+                loading="eager"
               />
+            </div>
+            <h2 className="hero-card-name">{profile.name}</h2>
+            <p className="hero-card-role">{profile.role}</p>
+            <p className="hero-card-tagline">{profile.tagline}</p>
+            <div className="hero-card-actions">
+              {/* TODO: set profile.resume in profile.ts */}
+              <a className="btn-primary" href={profile.resume} target="_blank" rel="noopener noreferrer">
+                <Icons.Download /> Resume
+              </a>
+              {/* TODO: set profile.email in profile.ts */}
+              <a className="btn-ghost" href={`mailto:${profile.email}`}>
+                <Icons.Mail /> Email
+              </a>
             </div>
             <blockquote className="hero-quote">
               <span className="hero-quote-mark">"</span>
-              Code. Build. Learn.<br />Repeat.
+              Code. Build. Learn. Repeat.
             </blockquote>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { navLinks } from "./data";
 import { Navbar } from "./Navbar";
 import { Hero } from "./Hero";
 import { About } from "./About";
+import { Featured } from "./Featured";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Experience } from "./Experience";
@@ -71,6 +72,7 @@ export default function Portfolio() {
 
       <Hero scrollTo={scrollTo} />
       <About scrollTo={scrollTo} />
+      <Featured />
       <Skills />
       <Projects />
       <Experience />

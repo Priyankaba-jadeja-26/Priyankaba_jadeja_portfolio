@@ -1,5 +1,6 @@
 import { Icons } from "./icons";
 import { projects } from "./data";
+import { profile } from "./profile";
 
 export function Projects() {
   return (
@@ -8,10 +9,10 @@ export function Projects() {
         <div className="projects-header fade-up">
           <div>
             <div className="section-tag"><span>✦</span> Work</div>
-            <h2 className="section-title" style={{ marginBottom: 0 }}>Projects</h2>
+            <h2 className="section-title" style={{ marginBottom: 0 }}>More Projects</h2>
           </div>
-          {/* TODO: link to a full projects page or repository list */}
-          <a href="#" style={{ display: "flex", alignItems: "center", gap: 6, color: "var(--c-accent)", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+          {/* TODO: set profile.github in profile.ts */}
+          <a href={profile.github} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 6, color: "var(--c-accent)", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
             View All Projects <Icons.Arrow />
           </a>
         </div>
@@ -29,8 +30,8 @@ export function Projects() {
                   {p.tags.map((t) => <span className="tag" key={t}>{t}</span>)}
                 </div>
                 <div className="project-links">
-                  <a className="project-link primary" href={p.live}><Icons.ExternalLink /> Live Demo</a>
-                  <a className="project-link ghost" href={p.github}><Icons.Github /> GitHub</a>
+                  <a className="project-link primary" href={p.live} target="_blank" rel="noopener noreferrer"><Icons.ExternalLink /> Live Demo</a>
+                  <a className="project-link ghost" href={p.github} target="_blank" rel="noopener noreferrer"><Icons.Github /> GitHub</a>
                 </div>
               </div>
             </div>
