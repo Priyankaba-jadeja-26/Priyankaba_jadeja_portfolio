@@ -16,16 +16,40 @@ export interface Project {
   image: string;
 }
 
+// ── Featured project (centerpiece) ─────────────────────────────────
+export interface FeaturedProject {
+  title: string;
+  tagline: string;
+  desc: string;
+  tags: string[];
+  live: string;
+  github: string;
+  highlights: string[];
+  // TODO: replace with real product screenshots (optimized, ~1200px wide).
+  screenshots: { src: string; alt: string }[];
+}
+
+export const featuredProject: FeaturedProject = {
+  title: "Aroha",
+  tagline: "A platform for reflection, growth & mindful living.",
+  desc:
+    "Aroha helps people journal their thoughts, track personal progress and build mindful habits. It combines a calm, focused interface with secure cloud sync so reflection feels effortless and private.",
+  tags: ["TypeScript", "React", "Supabase", "Tailwind CSS"],
+  live: "#", // TODO: add live demo URL
+  github: "#", // TODO: add GitHub repo URL
+  highlights: [
+    "Secure authentication & private cloud sync",
+    "Habit tracking with progress insights",
+    "Distraction-free journaling experience",
+  ],
+  screenshots: [
+    // TODO: replace these placeholders with real Aroha screenshots.
+    { src: "https://picsum.photos/seed/aroha-1/1200/750", alt: "Aroha dashboard screenshot" },
+    { src: "https://picsum.photos/seed/aroha-2/1200/750", alt: "Aroha journaling screen screenshot" },
+  ],
+};
+
 export const projects: Project[] = [
-  {
-    title: "Aroha",
-    badge: "Featured",
-    desc: "A reflection and growth platform that helps users journal their thoughts, track progress and build mindfulness habits.",
-    tags: ["TypeScript", "Supabase", "Tailwind CSS"],
-    live: "#", // TODO: add live demo URL
-    github: "#", // TODO: add GitHub repo URL
-    image: "https://picsum.photos/seed/aroha/800/600",
-  },
   {
     title: "Eye Spectacles Project",
     desc: "AI-based smart spectacles concept for eye health monitoring.",
@@ -64,6 +88,15 @@ export const experiences: Experience[] = [
     period: "2022 – 2023",
     desc: "Created educational and motivational content, scripting and voice work.",
   },
+];
+
+// ── Highlights / achievements ──────────────────────────────────────
+// TODO: replace with your real achievements & highlights.
+export const highlights = [
+  { num: "3+", label: "Projects shipped" },
+  { num: "6+", label: "Technologies" },
+  { num: "2+", label: "Years writing code" },
+  { num: "1", label: "Product in active development" },
 ];
 
 export const navLinks = [
