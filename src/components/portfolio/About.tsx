@@ -1,4 +1,5 @@
 import { Icons } from "./icons";
+import { highlights } from "./data";
 
 interface AboutProps {
   scrollTo: (id: string) => void;
@@ -38,6 +39,15 @@ export function About({ scrollTo }: AboutProps) {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="highlights-grid fade-up">
+          {highlights.map((h) => (
+            <div className="highlight-card glass-sm" key={h.label}>
+              <span className="num">{h.num}</span>
+              <div className="label">{h.label}</div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
