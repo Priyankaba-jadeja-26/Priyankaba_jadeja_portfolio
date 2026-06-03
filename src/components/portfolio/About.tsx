@@ -22,12 +22,28 @@ export function About({ scrollTo }: AboutProps) {
         <div className="about-card glass fade-up">
           <div className="about-text">
             <p>
-              I'm pursuing my MSc in Computer Applications &amp; Information Technology. I enjoy
-              coding, building web applications, and solving problems through technology.
+              I'm Priyankaba Jadeja, an MSc CA & IT student and aspiring software developer
+              passionate about transforming ideas into meaningful digital products. My journey in
+              technology is driven by curiosity, continuous learning, and a desire to create
+              solutions that make a real impact.
             </p>
             <p>
-              I believe in continuous learning, clean code, and creating meaningful impact through
-              software.
+              Over time, I've explored different areas including frontend development, content
+              creation, and AI-driven projects. I enjoy creating clean, user-focused experiences and
+              and turning concepts into practical solutions. Whether it's developing web
+              applications, designing thoughtful interfaces, or experimenting with innovative ideas,
+              every project is an opportunity to learn and improve.
+            </p>
+            <p>
+              Beyond coding, I enjoy public speaking and communication. I've anchored some events
+              like a state level Seminar: on AI Tools in Research, an experience that strengthened
+              my confidence, presentation skills, and ability to connect with people.
+            </p>
+            <p>
+              I believe in learning by building, embracing challenges, and continuously improving.
+              Whether it's developing applications, exploring emerging technologies, or speaking in
+              front of an audience, I strive to grow, create value, and make a positive impact
+              through my work.
             </p>
             <button
               className="btn-primary"
