@@ -95,7 +95,7 @@ export function Hero({ scrollTo }: HeroProps) {
               </a>
             </div>
             <blockquote className="hero-quote">
-              <span className="hero-quote-mark">"</span>
+              <span className="hero-quote-mark"></span>
               Code. Build. Learn. Repeat.
             </blockquote>
           </div>

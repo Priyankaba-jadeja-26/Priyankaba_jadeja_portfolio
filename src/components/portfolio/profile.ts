@@ -1,3 +1,4 @@
+import profilePhoto from "../assets/profile.jpeg";
 // ── Single source of truth for personal info & links ──────────────
 // TODO: Replace every placeholder below with your real details.
 
@@ -8,14 +9,12 @@ export const profile = {
   tagline:
     "I turn ideas into clean, reliable software — focused on building products that genuinely help people.",
   // TODO: replace with a real, optimized profile photo (square, ~600x600).
-  photo:
-    "https://images.unsplash.com/photo-1494790108755-2616b332b70b?w=600&q=80&auto=format&fit=crop",
-  // TODO: replace with your real links / contact details.
+  photo: profilePhoto,
   email: "priyankaba2611@gmail.com",
   github: "https://github.com/Priyankaba-jadeja-26",
   linkedin: "https://www.linkedin.com/in/priyankaba-jadeja-41b768319",
   resume: "#", // TODO: link to your resume PDF
-  portfolio: "#", // TODO: link to live portfolio / personal site
+  portfolio: "https://priyankaba-jadeja-portfolio.vercel.app/",
 };
 
 export const socialLinks = [
