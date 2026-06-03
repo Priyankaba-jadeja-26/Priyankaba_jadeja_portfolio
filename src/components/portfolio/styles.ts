@@ -211,14 +211,14 @@ export const globalStyles = `
     overflow: hidden;
   }
   .hero-img-wrap {
-    width: 130px; height: 130px;
-    border-radius: 50%;
+    width: 220px; height: 280px;
+    border-radius: 24px;
     margin: 0 auto 20px;
     padding: 4px;
     background: linear-gradient(135deg, var(--c-accent), var(--c-pink), var(--c-blue));
     box-shadow: 0 8px 32px rgba(99,102,241,0.25);
   }
-  .hero-img-wrap img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid white; }
+  .hero-img-wrap img { width: 100%; height: 100%; border-radius: 24px; object-fit: cover; border: 3px solid white; object-position: center top; transform: scale(1.05) }
   .float-soft { animation: floatSoft 5s ease-in-out infinite; }
   @keyframes floatSoft { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-10px);} }
   .hero-card-name { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--c-text); margin-bottom: 4px; }

@@ -71,8 +71,8 @@ export function Hero({ scrollTo }: HeroProps) {
               <img
                 src={profile.photo}
                 alt={`Portrait of ${profile.name}`}
-                width={130}
-                height={130}
+                width={220}
+                height={280}
                 loading="eager"
               />
             </div>
