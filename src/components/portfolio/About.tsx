@@ -7,9 +7,10 @@ interface AboutProps {
 
 export function About({ scrollTo }: AboutProps) {
   const stats = [
-    { icon: <Icons.Code />, num: "6+", label: "Technologies" },
-    { icon: <Icons.Folder />, num: "3+", label: "Projects" },
-    { icon: <Icons.Trophy />, num: "2+", label: "Experiences" },
+    { icon: <Icons.Code />, num: "11+", label: "Technologies" },
+    { icon: <Icons.Code />, num: "9", label: "Tools" },
+    { icon: <Icons.Folder />, num: "2+", label: "Projects Deployed" },
+    { icon: <Icons.Trophy />, num: "2+", label: "Years of learning" },
   ];
 
   return (

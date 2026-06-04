@@ -1,19 +1,34 @@
 // ── Portfolio content ──────────────────────────────────────────────
 // TODO: Replace the placeholder content below with real portfolio data.
+import headingScreen from "../assets/Heading_Screen.png";
+import tasksScreen from "../assets/Tasks_and_progress_screen.png";
+import reflectionScreen from "../assets/Reflection_Screen.png";
 
 export const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "SQL",
   "Python",
   "Java",
   "C",
   "C++",
-  "SQL",
-  "JavaScript",
-  "TypeScript",
-  "HTML",
-  "CSS",
+  "Wordpress",
+  "Vite",
+  "Firebase",
+  "Supabase",
+];
+
+export const tools = [
+  "VS Code",
   "Git",
   "GitHub",
-  "Supabase",
+  "Vercel",
+  "Netlify",
+  "Lovable",
+  "RStudio",
+  "Canva",
 ];
 
 export interface Project {
@@ -52,11 +67,17 @@ export const featuredProject: FeaturedProject = {
     "Distraction-free journaling experience",
   ],
   screenshots: [
-    // TODO: replace these placeholders with real Aroha screenshots.
-    { src: "https://picsum.photos/seed/aroha-1/1200/750", alt: "Aroha dashboard screenshot" },
     {
-      src: "https://picsum.photos/seed/aroha-2/1200/750",
-      alt: "Aroha journaling screen screenshot",
+      src: headingScreen,
+      alt: "Aroha dashboard screenshot",
+    },
+    {
+      src: tasksScreen,
+      alt: "Aroha tasks screen",
+    },
+    {
+      src: reflectionScreen,
+      alt: "Aroha reflection screen",
     },
   ],
 };
@@ -105,10 +126,10 @@ export const experiences: Experience[] = [
 // ── Highlights / achievements ──────────────────────────────────────
 // TODO: replace with your real achievements & highlights.
 export const highlights = [
-  { num: "3+", label: "Projects shipped" },
-  { num: "6+", label: "Technologies" },
-  { num: "2+", label: "Years writing code" },
-  { num: "1", label: "Product in active development" },
+  { num: "12+", label: "Stage Appearances" },
+  { num: "5+", label: "Content Projects" },
+  { num: "2+", label: "Events Hosted" },
+  { num: "3+", label: "Domains Explored" },
 ];
 
 export const navLinks = [
