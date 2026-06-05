@@ -1,14 +1,37 @@
 import { useState } from "react";
 import { Icons } from "./icons";
 import { profile } from "./profile";
+import emailjs from "@emailjs/browser";
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: wire up form submission (e.g. email service or backend endpoint)
-    console.log("Contact form submitted:", formData);
+
+    try {
+      await emailjs.send(
+        "service_b4soqaw",
+        "template_whtwbfl",
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "iexAYN-Yta8RqM614",
+      );
+
+      alert("Message sent successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send message.");
+    }
   };
 
   // TODO: set values in profile.ts
