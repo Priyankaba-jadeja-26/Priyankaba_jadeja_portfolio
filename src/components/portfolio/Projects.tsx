@@ -57,7 +57,7 @@ export function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Icons.ExternalLink /> Live Demo
+                    <Icons.ExternalLink /> {p.primaryButton || "Live Demo"}
                   </a>
                   <a
                     className="project-link ghost"
@@ -65,7 +65,7 @@ export function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Icons.Github /> GitHub
+                    <Icons.Github /> {p.secondaryButton || "GitHub"}
                   </a>
                 </div>
               </div>

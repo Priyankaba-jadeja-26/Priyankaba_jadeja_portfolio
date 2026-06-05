@@ -1,24 +1,13 @@
-// ── Portfolio content ──────────────────────────────────────────────
-// TODO: Replace the placeholder content below with real portfolio data.
 import headingScreen from "../assets/Heading_Screen.png";
+import EyeSpectacles from "../assets/Eye_Spectacles_Reference.png";
+import PortfolioImage from "../assets/Portfolio_home.png";
+import shadesOfPriyanka from "../assets/Shades_of_Priyanka.png";
 import tasksScreen from "../assets/Tasks_and_progress_screen.png";
 import reflectionScreen from "../assets/Reflection_Screen.png";
 
-export const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "SQL",
-  "Python",
-  "Java",
-  "C",
-  "C++",
-  "Wordpress",
-  "Vite",
-  "Firebase",
-  "Supabase",
-];
+export const languages = ["JavaScript", "TypeScript", "Python", "Java", "C", "C++", "SQL"];
+
+export const technologies = ["HTML", "CSS", "React", "WordPress", "Vite", "Firebase", "Supabase"];
 
 export const tools = [
   "VS Code",
@@ -29,6 +18,8 @@ export const tools = [
   "Lovable",
   "RStudio",
   "Canva",
+  "ChatGPT",
+  "Claude",
 ];
 
 export interface Project {
@@ -39,6 +30,8 @@ export interface Project {
   live: string;
   github: string;
   image: string;
+  primaryButton?: string;
+  secondaryButton?: string;
 }
 
 // ── Featured project (centerpiece) ─────────────────────────────────
@@ -57,14 +50,24 @@ export interface FeaturedProject {
 export const featuredProject: FeaturedProject = {
   title: "Aroha",
   tagline: "A platform for reflection, growth & mindful living.",
-  desc: "Aroha helps people journal their thoughts, track personal progress and build mindful habits. It combines a calm, focused interface with secure cloud sync so reflection feels effortless and private.",
+  desc: `Aroha is a personal growth and reflection platform designed to help users build better habits, stay organized, and develop greater self-awareness through consistent daily practice. The application combines task management, journaling, mood reflection, and progress tracking into a single distraction-free experience focused on long-term personal development.
+
+
+  Users can manage daily tasks, record reflections, monitor their growth journey, and gain meaningful insights into their habits and productivity. 
+  
+
+
+  Built with React, TypeScript, and Supabase, Aroha demonstrates my skills in frontend development, authentication, database integration, responsive design, and user-centered product development.`,
   tags: ["TypeScript", "React", "Supabase", "Tailwind CSS"],
-  live: "#", // TODO: add live demo URL
-  github: "#", // TODO: add GitHub repo URL
+  live: "https://aroha-daily-growth-ui.vercel.app",
+  github: "https://github.com/Priyankaba-jadeja-26/aroha-daily-growth-ui",
   highlights: [
     "Secure authentication & private cloud sync",
-    "Habit tracking with progress insights",
-    "Distraction-free journaling experience",
+    "Daily reflection & mood tracking",
+    "Progress analytics and insights",
+    "Habit & task management system",
+    "Responsive modern UI",
+    "Built with React, TypeScript & Supabase",
   ],
   screenshots: [
     {
@@ -85,19 +88,34 @@ export const featuredProject: FeaturedProject = {
 export const projects: Project[] = [
   {
     title: "Eye Spectacles Project",
-    desc: "AI-based smart spectacles concept for eye health monitoring.",
-    tags: ["Python", "AI/ML"],
-    live: "#", // TODO: add live demo URL
-    github: "#", // TODO: add GitHub repo URL
-    image: "https://picsum.photos/seed/eye/800/600",
+    desc: "AI-based smart spectacles concept selected under SSIP. The project focuses on eye movement tracking, blink-rate analysis, fatigue detection, and stress monitoring through wearable technology. Main objective of the project is to show user how their screen time is affecting their mental well-being. Currently in the research stage.",
+    tags: ["AI/ML", "Research", "Healthcare"],
+    live: "/documents/PriyankabaSmartSpectaclesSSIP.pptx", // TODO: add live demo URL
+    github: "/documents/SSIP-ProjectApproved.PDF", // TODO: add GitHub repo URL
+    image: EyeSpectacles,
+    primaryButton: "View Proposal",
+    secondaryButton: "Approval Letter",
   },
   {
     title: "Personal Diary Website",
-    desc: "A personal website to share experiences, thoughts and creative work.",
-    tags: ["React", "CSS"],
-    live: "#", // TODO: add live demo URL
-    github: "#", // TODO: add GitHub repo URL
-    image: "https://picsum.photos/seed/diary/800/600",
+    desc: "A personal storytelling website developed during my first year of college using HTML, CSS, and JavaScript. The platform showcases my journey through technology, achievements, travels, photographs, and personal experiences while helping me strengthen my frontend development and UI design skills.",
+    tags: ["HTML", "CSS", "JavaScript"],
+
+    live: "https://priyankaba-jadeja-26.github.io/Personal-Diary/", // TODO: add live demo URL
+    github: "https://github.com/Priyankaba-jadeja-26/Personal-Diary", // TODO: add GitHub repo URL
+    image: shadesOfPriyanka,
+    primaryButton: "Live Demo",
+    secondaryButton: "GitHub",
+  },
+  {
+    title: "Portfolio Website",
+    desc: "A modern portfolio website built with React, TypeScript, and Vite to showcase my projects, skills, experience, and development journey. Designed with a clean UI, responsive layout, and interactive sections to create a professional online presence.",
+    tags: ["React", "TypeScript", "Vercel", "Vite"],
+    live: "https://your-vercel-url.vercel.app",
+    github: "https://github.com/Priyankaba-jadeja-26/your-portfolio-repo",
+    image: PortfolioImage,
+    primaryButton: "Live Demo",
+    secondaryButton: "GitHub",
   },
 ];
 
@@ -112,14 +130,8 @@ export const experiences: Experience[] = [
   {
     role: "Freelance Content Writer",
     org: "Self-employed",
-    period: "2023 – Present",
+    period: "2025 – Present",
     desc: "Wrote articles and blogs for clients, focused on research and engaging content.",
-  },
-  {
-    role: "Content Creator – Jeevan Darshan",
-    org: "Jeevan Darshan",
-    period: "2022 – 2023",
-    desc: "Created educational and motivational content, scripting and voice work.",
   },
 ];
 
@@ -129,7 +141,7 @@ export const highlights = [
   { num: "12+", label: "Stage Appearances" },
   { num: "5+", label: "Content Projects" },
   { num: "2+", label: "Events Hosted" },
-  { num: "3+", label: "Domains Explored" },
+  { num: "4+", label: "Domains Explored" },
 ];
 
 export const navLinks = [

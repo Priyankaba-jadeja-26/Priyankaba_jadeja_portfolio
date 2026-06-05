@@ -279,7 +279,7 @@ export const globalStyles = `
   .featured-shots { display: flex; flex-direction: column; gap: 16px; }
   .featured-shot { overflow: hidden; padding: 6px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
   .featured-shot:hover { transform: translateY(-4px) scale(1.01); box-shadow: var(--shadow-lg); }
-  .featured-shot img { width: 100%; display: block; border-radius: 8px; aspect-ratio: 16 / 10; object-fit: cover; }
+  .featured-shot img { width: 100%; display: block; border-radius: 8px; aspect-ratio: 16 / 8.25; object-fit: cover; }
   .featured-title { font-family: var(--font-display); font-weight: 700; font-size: 26px; color: var(--c-text); }
   .featured-tagline { font-size: 15px; font-weight: 600; color: var(--c-accent); margin-bottom: 12px; }
   .featured-highlights { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
@@ -292,7 +292,12 @@ export const globalStyles = `
 
   /* Skills */
   #skills { padding: 80px 0; }
-  .skills-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; margin-bottom: 36px }
+  .skills-heading {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 600;
+}
   .skill-pill {
     display: flex; align-items: center; gap: 8px;
     padding: 10px 20px; border-radius: 50px;
@@ -324,6 +329,10 @@ export const globalStyles = `
     color: white;
   }
   .project-desc { font-size: 14px; color: var(--c-muted); line-height: 1.6; margin-bottom: 14px; }
+  .project-desc p {
+    margin-bottom: 16px;
+    line-height: 1.8;
+  }
   .project-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
   .tag {
     padding: 3px 10px; border-radius: 30px; font-size: 12px; font-weight: 500;

@@ -28,12 +28,14 @@ export function Featured() {
           <div className="featured-content">
             <div className="project-title-row">
               <span className="featured-title">{p.title}</span>
-              <span className="featured-badge">In Development</span>
+              <span className="featured-badge">MVP Completed</span>
             </div>
             <p className="featured-tagline">{p.tagline}</p>
-            <p className="project-desc" style={{ marginBottom: 18 }}>
-              {p.desc}
-            </p>
+            <div className="project-desc">
+              {p.desc.split("\n\n").map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
 
             <ul className="featured-highlights">
               {p.highlights.map((h) => (

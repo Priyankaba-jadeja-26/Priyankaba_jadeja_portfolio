@@ -1,4 +1,4 @@
-import { skills } from "./data";
+import { languages, technologies, tools } from "./data";
 
 export function Skills() {
   return (
@@ -7,13 +7,30 @@ export function Skills() {
         <div className="section-tag fade-up">
           <span>✦</span> Expertise
         </div>
-        <h2 className="section-title fade-up">My Skills</h2>
-        <p className="section-sub fade-up">Technologies and tools I work with.</p>
-        <div className="skills-grid fade-up">
-          {skills.map((s) => (
-            <div className="skill-pill" key={s}>
-              <span className="skill-dot" /> {s}
-            </div>
+        <h3 className="skills-heading">Languages</h3>
+        <div className="skills-grid">
+          {languages.map((skill) => (
+            <span className="skill-pill" key={skill}>
+              {skill}
+            </span>
+          ))}
+        </div>
+
+        <h3 className="skills-heading">Web Technologies</h3>
+        <div className="skills-grid">
+          {technologies.map((skill) => (
+            <span className="skill-pill" key={skill}>
+              {skill}
+            </span>
+          ))}
+        </div>
+
+        <h3 className="skills-heading">Tools & Platforms</h3>
+        <div className="skills-grid">
+          {tools.map((skill) => (
+            <span className="skill-pill" key={skill}>
+              {skill}
+            </span>
           ))}
         </div>
       </div>
