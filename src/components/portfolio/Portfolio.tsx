@@ -12,6 +12,7 @@ import { Education } from "./Education";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { BackToTop } from "./BackToTop";
+import { Achievements } from "./Achievements";
 
 export default function Portfolio() {
   const [scrolled, setScrolled] = useState(false);
@@ -80,6 +81,7 @@ export default function Portfolio() {
       <Projects />
       <Experience />
       <Education />
+      <Achievements />
       <Contact />
       <Footer />
 
