@@ -5,15 +5,14 @@ import profilePhoto from "../assets/profile.jpeg";
 export const profile = {
   name: "Priyankaba Jadeja",
   initials: "PJ",
-  role: "Software Developer | MSc CA & IT Student",
+  role: "Software Developer | Integrated MSc CA & IT [year 2] ",
   tagline:
-    "I turn ideas into clean, reliable software — focused on building products that genuinely help people.",
-  // TODO: replace with a real, optimized profile photo (square, ~600x600).
+    "Developer, educator, and research innovator focused on solving real-world problems through technology.",
   photo: profilePhoto,
   email: "priyankaba2611@gmail.com",
   github: "https://github.com/Priyankaba-jadeja-26",
   linkedin: "https://www.linkedin.com/in/priyankaba-jadeja-41b768319",
-  resume: "#", // TODO: link to your resume PDF
+  resume: "/documents/Priyankaba_Jadeja_Resume.pdf",
   portfolio: "https://priyankaba-jadeja-portfolio.vercel.app/",
 };
 

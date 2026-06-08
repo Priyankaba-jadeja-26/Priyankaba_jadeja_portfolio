@@ -13,7 +13,7 @@ export function Hero({ scrollTo }: HeroProps) {
           <div>
             <div className="hero-badge fade-up visible">
               <span style={{ color: "var(--c-accent)" }}>✦</span>
-              MSc CA &amp; IT Student <span>•</span> Software Developer
+              Building at the intersection of Technology, Research & Creativity
             </div>
             <h1 className="hero-title fade-up visible">
               Building <em>digital</em> <span className="grad">experiences</span> &amp; real-world
@@ -21,8 +21,9 @@ export function Hero({ scrollTo }: HeroProps) {
             </h1>
             <p className="hero-sub fade-up">
               I'm a passionate developer who loves turning ideas into meaningful products. Currently
-              building <strong>Aroha</strong> — a platform for reflection, growth and mindful
-              living.
+              building <strong>Aroha</strong> and working on research-driven projects in
+              <strong> healthcare </strong>
+              and <strong>assistive technology</strong> through SSIP.
             </p>
             <div className="hero-btns fade-up">
               <button className="btn-primary" onClick={() => scrollTo("projects")}>

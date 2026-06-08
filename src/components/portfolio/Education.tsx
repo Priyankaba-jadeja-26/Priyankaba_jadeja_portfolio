@@ -15,7 +15,7 @@ export function Education() {
           </div>
 
           <div>
-            <div className="edu-degree">MSc (CA & IT)</div>
+            <div className="edu-degree">Integrated MSc (CA & IT)</div>
 
             <div className="edu-uni"> Krantiguru Shyamji Krishna Verma Kutch University </div>
 
