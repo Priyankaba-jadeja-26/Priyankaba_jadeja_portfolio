@@ -128,10 +128,31 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    role: "Freelance Content Writer",
-    org: "Self-employed",
+    role: "Part-Time Teacher",
+    org: "IRead Classes, Bhuj",
+    period: "Apr 2025 – Present",
+    desc: "Teaching English and Mathematics to school students while helping them strengthen problem-solving, communication, and academic skills.",
+  },
+
+  {
+    role: "Freelance Content Writer & Scriptwriter",
+    org: "Independent / Freelance",
+    period: "2024 – Present",
+    desc: "Created scripts for educational and spiritual YouTube content. Assisted with content planning, audience engagement strategies, and voice-over production while improving storytelling and communication skills.",
+  },
+
+  {
+    role: "Event Host & Public Speaker",
+    org: "College & Academic Events",
     period: "2025 – Present",
-    desc: "Wrote articles and blogs for clients, focused on research and engaging content.",
+    desc: "Hosted Freshers Fiesta 2025 and anchored a state-level seminar on AI Tools in Research. Developed confidence in public speaking, audience engagement, stage management, and professional communication.",
+  },
+
+  {
+    role: "Brand Identity Designer & Social Media Consultant",
+    org: "Confidential Client Project",
+    period: "2024",
+    desc: "Built the complete visual identity for a client-owned Instagram brand, including logo design, color systems, branding guidelines, and content direction. Project details are available upon request due to confidentiality requirements.",
   },
 ];
 
