@@ -145,13 +145,13 @@ export const experiences: Experience[] = [
     role: "Event Host & Public Speaker",
     org: "College & Academic Events",
     period: "2025 – Present",
-    desc: "Hosted Freshers Fiesta 2025 and anchored a state-level seminar on AI Tools in Research. Developed confidence in public speaking, audience engagement, stage management, and professional communication.",
+    desc: "Anchored a state-level seminar on AI Tools in Research, Hosted Freshers Fiesta 2025 and handled college seminars well. Developed confidence in public speaking, audience engagement, stage management, and professional communication.",
   },
 
   {
     role: "Brand Identity Designer & Social Media Consultant",
     org: "Confidential Client Project",
-    period: "2024",
+    period: "2026",
     desc: "Built the complete visual identity for a client-owned Instagram brand, including logo design, color systems, branding guidelines, and content direction. Project details are available upon request due to confidentiality requirements.",
   },
 ];
