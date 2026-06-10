@@ -23,6 +23,7 @@ The website highlights:
 * HTML
 * CSS
 * JavaScript
+* React
 * Git & GitHub
 * Vercel (Deployment)
 
