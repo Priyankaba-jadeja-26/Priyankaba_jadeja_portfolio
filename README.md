@@ -12,39 +12,39 @@ This portfolio was built to create a professional online presence and showcase m
 
 The website highlights:
 
-* My background and journey
-* Technical skills and technologies
-* Featured projects
-* Experience and achievements
-* Contact information
+- My background and journey
+- Technical skills and technologies
+- Featured projects
+- Experience and achievements
+- Contact information
 
 # Technologies Used
 
-* HTML
-* CSS
-* JavaScript
-* React
-* Git & GitHub
-* Vercel (Deployment)
+- HTML
+- CSS
+- JavaScript
+- React
+- Git & GitHub
+- Vercel (Deployment)
 
 # Features
 
-* Responsive Design
-* Modern User Interface
-* Project Showcase
-* Skills Section
-* About Me Section
-* Contact Information
-* Fast and Lightweight Performance
+- Responsive Design
+- Modern User Interface
+- Project Showcase
+- Skills Section
+- About Me Section
+- Contact Information
+- Fast and Lightweight Performance
 
 # Purpose
 
 The goal of this portfolio is to:
 
-* Showcase my technical skills
-* Present my projects and achievements
-* Build a professional online presence
-* Connect with recruiters, developers, and collaborators
+- Showcase my technical skills
+- Present my projects and achievements
+- Build a professional online presence
+- Connect with recruiters, developers, and collaborators
 
 # About Me
 
@@ -52,20 +52,20 @@ I am Priyankaba Jadeja, an MSc CA & IT student passionate about technology, soft
 
 My areas of interest include:
 
-* Web Development
-* Python
-* Java
-* C & C++
-* SQL & Database Management
-* Content Writing & Content Creation
+- Web Development
+- Python
+- Java
+- C & C++
+- SQL & Database Management
+- Content Writing & Content Creation
 
 I enjoy building projects, solving problems, and exploring new technologies.
 
 # Connect With Me
 
-* LinkedIn: https://linkedin.com/in/priyankaba-jadeja
-* GitHub: https://github.com/Priyankaba-jadeja-26
-* Portfolio: https://priyankaba-jadeja-portfolio.vercel.app/
+- LinkedIn: https://linkedin.com/in/priyankaba-jadeja
+- GitHub: https://github.com/Priyankaba-jadeja-26
+- Portfolio: https://priyankaba-jadeja-portfolio.vercel.app/
 
 # Feedback
 
