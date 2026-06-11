@@ -8,6 +8,10 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      alert("Please fill in all fields.");
+      return;
+    }
 
     try {
       await emailjs.send(
@@ -64,6 +68,7 @@ export function Contact() {
                   placeholder="Priya Sharma"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  required
                 />
               </div>
               <div>
@@ -74,6 +79,7 @@ export function Contact() {
                   placeholder="priya@email.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  required
                 />
               </div>
               <div>
@@ -83,6 +89,7 @@ export function Contact() {
                   placeholder="Let's build something together..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  required
                 />
               </div>
               <button className="btn-primary" type="submit">
