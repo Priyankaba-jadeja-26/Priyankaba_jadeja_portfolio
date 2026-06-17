@@ -25,7 +25,7 @@ export function Education() {
               <div>Semester 1 • 8.18 SGPA</div>
               <div>Semester 2 • 8.18 SGPA</div>
               <div>Semester 3 • 8.36 SGPA</div>
-              <div>Semester 4 • Result Awaited</div>
+              <div>Semester 4 • 8.82 SGPA</div>
               <div
                 style={{
                   marginTop: "16px",
@@ -59,6 +59,15 @@ export function Education() {
                   rel="noopener noreferrer"
                 >
                   Sem 3
+                </a>
+
+                <a
+                  className="project-link primary"
+                  href="/documents/results/MarksheetSem4.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Sem 4
                 </a>
               </div>
             </div>
