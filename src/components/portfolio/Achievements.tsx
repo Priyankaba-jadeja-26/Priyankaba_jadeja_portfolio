@@ -41,7 +41,7 @@ export function Achievements() {
             <div style={{ marginTop: "12px" }}>
               <a
                 className="project-link primary"
-                href="/documents/PriyankabaSmartSpectaclesSSIP.pptx"
+                href="https://neuro-vision-psi.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

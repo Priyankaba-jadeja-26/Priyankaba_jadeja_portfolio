@@ -59,8 +59,8 @@ export const featuredProject: FeaturedProject = {
 
   Built with React, TypeScript, and Supabase, Aroha demonstrates my skills in frontend development, authentication, database integration, responsive design, and user-centered product development.`,
   tags: ["TypeScript", "React", "Supabase", "Tailwind CSS"],
-  live: "https://aroha-daily-growth-ui.vercel.app",
-  github: "https://github.com/Priyankaba-jadeja-26/aroha-daily-growth-ui",
+  live: "https://arohaa.lovable.app/",
+  github: "https://github.com/Priyankaba-jadeja-26/arohaa",
   highlights: [
     "Secure authentication & private cloud sync",
     "Daily reflection & mood tracking",
@@ -88,12 +88,12 @@ export const featuredProject: FeaturedProject = {
 export const projects: Project[] = [
   {
     title: "Eye Spectacles Project",
-    desc: "AI-based smart spectacles concept selected under SSIP. The project focuses on eye movement tracking, blink-rate analysis, fatigue detection, and stress monitoring through wearable technology. Main objective of the project is to show user how their screen time is affecting their mental well-being. Currently in the research stage.",
+    desc: "AI-based smart spectacles concept selected under SSIP. The project focuses on eye movement tracking, blink-rate analysis, fatigue detection, and stress monitoring through wearable technology. Main objective of the project is to show user how their screen time is affecting their mental well-being. Currently in the research stage, demo dashboard is developed based on the csv data readings.",
     tags: ["AI/ML", "Research", "Healthcare"],
     live: "/documents/PriyankabaSmartSpectaclesSSIP.pptx", // TODO: add live demo URL
     github: "/documents/SSIP-ProjectApproved.PDF", // TODO: add GitHub repo URL
     image: EyeSpectacles,
-    primaryButton: "View Proposal",
+    primaryButton: "View Demo Dashboard",
     secondaryButton: "Approval Letter",
   },
   {
