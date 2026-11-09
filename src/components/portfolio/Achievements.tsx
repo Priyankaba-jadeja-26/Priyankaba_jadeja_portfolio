@@ -45,7 +45,7 @@ export function Achievements() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View Proposal
+                View Demo Dashboard
               </a>
             </div>
           </div>

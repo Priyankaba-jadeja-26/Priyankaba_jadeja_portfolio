@@ -90,8 +90,8 @@ export const projects: Project[] = [
     title: "Eye Spectacles Project",
     desc: "AI-based smart spectacles concept selected under SSIP. The project focuses on eye movement tracking, blink-rate analysis, fatigue detection, and stress monitoring through wearable technology. Main objective of the project is to show user how their screen time is affecting their mental well-being. Currently in the research stage, demo dashboard is developed based on the csv data readings.",
     tags: ["AI/ML", "Research", "Healthcare"],
-    live: "/documents/PriyankabaSmartSpectaclesSSIP.pptx", // TODO: add live demo URL
-    github: "/documents/SSIP-ProjectApproved.PDF", // TODO: add GitHub repo URL
+    live: "https://neuro-vision-psi.vercel.app/",
+    github: "https://github.com/Priyankaba-jadeja-26/NeuroVision",
     image: EyeSpectacles,
     primaryButton: "View Demo Dashboard",
     secondaryButton: "Approval Letter",
@@ -101,8 +101,8 @@ export const projects: Project[] = [
     desc: "A personal storytelling website developed during my first year of college using HTML, CSS, and JavaScript. The platform showcases my journey through technology, achievements, travels, photographs, and personal experiences while helping me strengthen my frontend development and UI design skills.",
     tags: ["HTML", "CSS", "JavaScript"],
 
-    live: "https://priyankaba-jadeja-26.github.io/Personal-Diary/", // TODO: add live demo URL
-    github: "https://github.com/Priyankaba-jadeja-26/Personal-Diary", // TODO: add GitHub repo URL
+    live: "https://priyankaba-jadeja-26.github.io/Personal-Diary/",
+    github: "https://github.com/Priyankaba-jadeja-26/Personal-Diary",
     image: shadesOfPriyanka,
     primaryButton: "Live Demo",
     secondaryButton: "GitHub",
