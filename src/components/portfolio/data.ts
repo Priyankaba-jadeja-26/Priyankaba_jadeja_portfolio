@@ -1,5 +1,6 @@
 import headingScreen from "../assets/Heading_Screen.png";
 import EyeSpectacles from "../assets/Eye_Spectacles_Reference.png";
+import ZaikaImage from "../assets/ZaikaImage.png";
 import PortfolioImage from "../assets/Portfolio_home.png";
 import shadesOfPriyanka from "../assets/Shades_of_Priyanka.png";
 import tasksScreen from "../assets/Tasks_and_progress_screen.png";
@@ -95,6 +96,15 @@ export const projects: Project[] = [
     image: EyeSpectacles,
     primaryButton: "View Demo Dashboard",
     secondaryButton: "Approval Letter",
+  },
+  {
+    title: "Zaika on Angaara",
+    desc: "A digital food ordering experience designed to help customers explore a food menu and place orders online. The project focuses on presenting menu items clearly and making the ordering journey simple and convenient.",
+    tags: ["Web Development", "UI/UX", "Online Ordering"],
+    live: "https://zaika-on-angaara.lovable.app/",
+    github: "https://github.com/Priyankaba-jadeja-26/Zaika-On-Angaara",
+    image: ZaikaImage,
+    primaryButton: "Live Demo",
   },
   {
     title: "Personal Diary Website",
