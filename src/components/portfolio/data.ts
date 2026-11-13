@@ -99,7 +99,7 @@ export const projects: Project[] = [
   },
   {
     title: "Zaika on Angaara",
-    desc: "A digital food ordering experience designed to help customers explore a food menu and place orders online. The project focuses on presenting menu items clearly and making the ordering journey simple and convenient.",
+    desc: "A digital food ordering experience designed to help customers explore a food menu and place orders online. The project focuses on presenting menu items clearly and making the ordering journey simple and convenient.There ia an admin panel too, by that the admin can sign using id & password and then they can edit the menu items and their availability & prices.",
     tags: ["Web Development", "UI/UX", "Online Ordering"],
     live: "https://zaika-on-angaara.lovable.app/",
     github: "https://github.com/Priyankaba-jadeja-26/Zaika-On-Angaara",
